@@ -2,49 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Base Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- CSS file links -->
+  <link href="base.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="works_on_smartphone">
 
-  <article>
-    <h1>Welcome to My Website</h1>
-    <h2>About This Page</h2>
-    <h3>Why I Built It</h3>
+  <header>
+    <ul>
+      <li class="logo">✈</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
 
-    <p>This is the first paragraph on my cool webpage.</p>
-    <p>Here’s another paragraph about my goals.</p>
-    <p>I want to learn HTML and web development.</p>
-    <p>I'm following this project to practice!</p>
+  <main>
+    <article>
+      <h1>Welcome to My Website</h1>
+      <h2>About This Page</h2>
+      <h3>Why I Built It</h3>
 
-    <h3>List of Learners</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Country</th>
-          <th>Gender</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Ephantus</td>
-          <td>Kenya</td>
-          <td>Male</td>
-        </tr>
-        <tr>
-          <td>Amina</td>
-          <td>Tanzania</td>
-          <td>Female</td>
-        </tr>
-      </tbody>
-    </table>
+      <p>This is the first paragraph on my cool webpage.</p>
+      <p>Here's another paragraph about my goals.</p>
+      <p>I want to learn HTML and web development.</p>
+      <p>I'm following this project to practice!</p>
+      
+      <!-- Link to tweets page -->
+      <p>Check out my <a href="tweets.html">tweets page</a>!</p>
 
-    <a href="https://alxafrica.com/" target="_blank">
-      <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo">
-    </a>
-  </article>
+      <h3>List of Learners</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Emily</td>
+            <td>Canada</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <aside>
+      <p>Placeholder to add comment thread later</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made by Your Name - <a href="https://www.alxafrica.com" target="_blank">ALX</a></p>
+  </footer>
 
 </body>
 </html>
-
