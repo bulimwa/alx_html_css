@@ -1,0 +1,85 @@
+/* Previous styles (header and what we do sections) remain the same */
+
+/* Our results section styles */
+.section-our-results {
+    padding: 100px 0;
+    text-align: center;
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.result-item {
+    position: relative;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pentagon {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: var(--color-primary);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.result-item:hover .pentagon {
+    transform: scale(1.1);
+}
+
+.result-percent {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.result-text {
+    font-size: 14px;
+    width: 80%;
+    line-height: 1.4;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    /* Previous responsive styles remain the same */
+    
+    /* Our results responsive */
+    .section-our-results {
+        padding: 60px 0;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    
+    .result-item {
+        height: 140px;
+    }
+    
+    .pentagon {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .result-percent {
+        font-size: 36px;
+    }
+}
