@@ -1,0 +1,56 @@
+/* [Previous styles remain the same] */
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out both;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-rotate {
+    animation: rotate 8s linear infinite;
+    animation-play-state: paused;
+}
+
+/* Service Item Hover Effects */
+.service-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Pentagon Hover Effects */
+.result-item:hover .animate-rotate {
+    animation-play-state: running;
+}
+
+/* Staggered Animations */
+.services-grid .service-item:nth-child(1) { animation-delay: 0.2s; }
+.services-grid .service-item:nth-child(2) { animation-delay: 0.4s; }
+.services-grid .service-item:nth-child(3) { animation-delay: 0.6s; }
+.services-grid .service-item:nth-child(4) { animation-delay: 0.8s; }
+
+.results-grid .result-item:nth-child(1) { animation-delay: 0.1s; }
+.results-grid .result-item:nth-child(2) { animation-delay: 0.3s; }
+.results-grid .result-item:nth-child(3) { animation-delay: 0.5s; }
+.results-grid .result-item:nth-child(4) { animation-delay: 0.7s; }
+
+/* [Rest of the existing styles remain unchanged] */
